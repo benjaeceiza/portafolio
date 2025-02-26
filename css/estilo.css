@@ -102,8 +102,38 @@
         align-items: center;
         padding: 0;
         margin-top: 50px;
+    }
+
+    .contenedor-contacto-mob{
+
+        width: 90%;
+        min-width: 350px;
+        margin:  20px auto;
+        background-color: rgb(83, 83, 83);
+        padding-bottom: 5px;
+        border-radius: 10px;
+        border: solid 1px white
 
     }
+
+    .lista-contacto-mob{
+        display: none;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+
+        
+    }
+
+    .item-contacto-mob{
+        margin: 0px 10px;
+    }
+
+    .item-contacto-mob img{
+        height: 40px;
+    }
+
 
     .item-contacto img {
         height: 40px;
@@ -181,6 +211,7 @@
         background-repeat: no-repeat;
         background-position: left;
         background-size: auto;
+       
     }
 
 
@@ -543,6 +574,10 @@
             flex-direction: column;
         }
 
+        .lista-contacto-mob{
+            display: flex;
+        }
+
         .header__title-mob {
             text-align: center;
             font-family: 'titulo';
@@ -577,6 +612,9 @@
         .header__text-small-mob {
             color: white;
         }
+        .sobre-mi {
+            height: auto;
+        }
 
     }
 
@@ -584,7 +622,7 @@
 
         .content-container-sobre-mi {
             flex-direction: column;
-            margin-bottom: 150px;
+
         }
 
         .sobre-mi-textos {
@@ -639,13 +677,6 @@
 
         }
 
-
-
-
-
-
-
-
     }
 
     @media(max-width:750px) {
@@ -656,9 +687,6 @@
     }
 
     @media(max-width:720px) {
-
-
-
 
         .proyectos__contenedor {
             width: 320px;
@@ -671,7 +699,6 @@
     @media(max-width:650px) {
        .iconos-conocimientos{
         margin: 20px 10px;
-        
         height: 25vw;
         width: 25vw;
         min-width: 100px;
@@ -680,6 +707,13 @@
 
        .img-iconos {
          height: 15vw;
+       }
+       .contendor-boton-contacto{
+        margin: 0px 10px 10px 0px;
+       }
+       .contendor-boton-contacto img{
+        width: 40px;
+        
        }
     }
 
