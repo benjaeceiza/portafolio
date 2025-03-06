@@ -28,8 +28,6 @@
         align-items: center;
         justify-content: space-evenly;
         height: 100vh;
-        flex-wrap: wrap;
-
     }
 
     .header-mob {
@@ -37,26 +35,18 @@
         height: 100vh;
     }
 
-    .contenedor-foto-nombre-mob {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 0px 0px 50px 0px;
-        flex-wrap: wrap;
-    }
+ 
 
 
     .div-1 {
-        width: 60VW;
+        width: 60vw;
         animation-duration: 1s;
         animation-name: in;
         animation-iteration-count: 1;
 
     }
 
-    .div-1-mob{
-        margin-top: 150px;
-    }
+  
 
 
     .header__title {
@@ -83,8 +73,6 @@
         font-family: 'titulo';
         font-weight: 100;
 
-
-
     }
 
 
@@ -97,6 +85,7 @@
         animation-name: opacidad;
         animation-duration: 1s;
         animation-iteration-count: 1;
+        
 
     }
 
@@ -119,10 +108,9 @@
     .titulo-nombre-mob{
         font-family: 'subtitulo';
         font-size: 5vw;
-
         color: white;
         font-weight: 100;
-        margin: 20px;
+        margin-top: 200px;
     }
 
     .lista-contacto {
@@ -439,13 +427,6 @@
 
 
 
-
-
-
-
-
-
-
     /* PROYECTOS - MOBILE */
 
     .none {
@@ -586,12 +567,13 @@
 
     @keyframes in {
         0% {
-
+          
             margin-right: 400px;
             opacity: 0;
         }
 
         100% {
+           
             margin-right: 0;
         }
     }
@@ -645,13 +627,15 @@
         }
 
         .div-2-mob {
-         
+            height: 100vh;
             text-align: center;
+            justify-content: center;
+            align-items: center;
         }
 
         .foto-mob {
             height: 10vw;
-            min-height: 180px;
+            min-height: 250px;
             margin: 20px 0px 0px 20px;
             filter: drop-shadow(2px 0px 5px white);
             mask-image: linear-gradient(rgb(250, 20, 20) 80%,
