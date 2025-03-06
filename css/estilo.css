@@ -118,6 +118,7 @@
     .titulo-nombre-mob{
         font-family: 'subtitulo';
         font-size: 5vw;
+
         color: white;
         font-weight: 100;
         margin: 20px;
@@ -647,7 +648,7 @@
 
         .foto-mob {
             height: 10vw;
-            min-height: 150px;
+            min-height: 180px;
             margin: 20px 0px 0px 20px;
             filter: drop-shadow(2px 0px 5px white);
             mask-image: linear-gradient(rgb(250, 20, 20) 80%,
@@ -659,12 +660,14 @@
 
 
 
-        .header__text-small-mob {
-            color: white;
-        }
+    
 
         .sobre-mi {
-            height: auto;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: none;
+            justify-content: start;
         }
 
     }
