@@ -35,7 +35,7 @@
         height: 100vh;
     }
 
- 
+
 
 
     .div-1 {
@@ -46,7 +46,7 @@
 
     }
 
-  
+
 
 
     .header__title {
@@ -85,7 +85,7 @@
         animation-name: opacidad;
         animation-duration: 1s;
         animation-iteration-count: 1;
-        
+
 
     }
 
@@ -105,7 +105,8 @@
         margin: 20px;
 
     }
-    .titulo-nombre-mob{
+
+    .titulo-nombre-mob {
         font-family: 'subtitulo';
         font-size: 5vw;
         color: white;
@@ -194,8 +195,8 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-       
-       
+
+
     }
 
 
@@ -220,7 +221,7 @@
         animation-name: slide;
         animation-duration: 2s;
         animation-iteration-count: 1;
-        background-image: url("../assets/fondo-simbolo.png");
+
         background-repeat: no-repeat;
         background-position: center;
         background-size: auto;
@@ -245,17 +246,43 @@
         text-align: left;
         font-size: 20px;
         width: 45%;
-        background-color: rgba(241, 241, 241, 0.699);
-        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.822);
         border-radius: 20px;
         box-shadow: 0px 0px 5px 5px rgb(139, 139, 139);
         min-width: 350px;
         margin: 0px auto;
+        overflow: hidden;
     }
 
-    .sobre-mi-textos p {
+    .header-textos {
+        background-color: #001220;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
 
+    .contenedor-iconos-header-textos {
+        width: 25%;
+    }
+
+    .url-textos {
+        width: 75%;
+    }
+
+    .url {
+        background-color: white;
+        height: 30px;
+        min-width: 100px;
+        width: 100%;
+        margin: auto;
+        border-radius: 50px;
+        padding-left: 10px;
+    }
+
+
+    .informacion-sobre-mi{
         font-family: sans-serif;
+        padding: 20px 20px;
     }
 
     .contenedor-lista-iconos-conocimientos {
@@ -348,7 +375,7 @@
         border-radius: 5px;
         max-height: 390px;
         margin: auto;
-      
+
     }
 
     .img-proyect {
@@ -567,13 +594,13 @@
 
     @keyframes in {
         0% {
-          
+
             margin-right: 400px;
             opacity: 0;
         }
 
         100% {
-           
+
             margin-right: 0;
         }
     }
@@ -643,11 +670,11 @@
 
         }
 
-    
 
 
 
-    
+
+
 
         .sobre-mi {
             margin: 0;
