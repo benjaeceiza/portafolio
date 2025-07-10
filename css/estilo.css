@@ -353,7 +353,7 @@
     .proyect-container {
         background-color: white;
         width: 18%;
-        max-width: 500px;
+        max-width: 350px;
         padding: 10px;
         text-align: left;
         min-width: 300px;
@@ -494,6 +494,7 @@
         left: 0;
         right: 0;
         z-index: 3;
+        
     }
 
     .contenedor-contacto-flotante {
@@ -779,7 +780,7 @@
         }
 
         .contendor-boton-contacto {
-            margin: 0px 10px 10px 0px;
+            margin: 0px 15px 15px 0px;
         }
 
         .contendor-boton-contacto img {
