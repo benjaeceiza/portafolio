@@ -1,0 +1,151 @@
+/* src/components/About/About.css */
+
+.about {
+  padding: 100px 20px;
+  background-color: var(--color-bg); /* Sigue el fondo oscuro del Hero */
+  color: var(--color-text-sub);
+}
+
+/* Título de la sección (podés reutilizar esta clase en otras secciones) */
+.section-title {
+  font-family: var(--font-sec);
+  font-size: 32px;
+  color: var(--color-text-main);
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-title span {
+  color: var(--color-accent-fucsia);
+  font-family: var(--font-main);
+  font-size: 24px;
+}
+
+.about__content-wrapper {
+  display: flex;
+  gap: 60px;
+  align-items: stretch;
+}
+
+/* --- ESTILOS DE LA VENTANA (SOBRE MÍ) --- */
+.about__text-box {
+  flex: 1;
+  background: rgba(16, 33, 65, 0.4); /* Azul muy oscuro y translúcido */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
+}
+
+.about__window-header {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.about__dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.dot-red { background-color: #FF5F56; }
+.dot-yellow { background-color: #FFBD2E; }
+.dot-green { background-color: #27C93F; }
+
+.about__window-title {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  color: #8892B0;
+  font-family: var(--font-text);
+  margin-left: -40px; /* Para centrar compensando los puntitos */
+}
+
+.about__window-body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.about__window-body strong {
+  color: var(--color-text-main);
+  color: var(--color-accent-fucsia); /* Resalta palabras clave */
+}
+
+/* --- ESTILOS DE LA GRILLA DE SKILLS --- */
+.about__skills {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  align-content: start;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent-violeta);
+  background: rgba(156, 39, 176, 0.1); /* Brillo violeta de fondo al pasar el mouse */
+  box-shadow: 0 5px 15px rgba(156, 39, 176, 0.2);
+}
+
+.skill-icon {
+  font-size: 40px;
+  color: var(--color-text-main);
+  transition: color 0.3s ease;
+}
+
+/* Colores originales de los logos al hacer hover */
+.skill-card:hover .html { color: #E34F26; }
+.skill-card:hover .css { color: #1572B6; }
+.skill-card:hover .js { color: #F7DF1E; }
+.skill-card:hover .react { color: #61DAFB; }
+.skill-card:hover .sass { color: #CC6699; }
+.skill-card:hover .mongo { color: #47A248; }
+.skill-card:hover .firebase { color: #FFCA28; }
+
+.skill-card span {
+  font-family: var(--font-sec);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-sub);
+}
+
+@media (min-width: 1200px) {
+  .about__skills {
+    /* Le decimos: 'Quiero 3 columnas, cada una de 1fr (espacio proporcional)' */
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 850px) {
+  .about__content-wrapper {
+    flex-direction: column;
+  }
+}

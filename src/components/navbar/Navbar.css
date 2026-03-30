@@ -1,0 +1,96 @@
+/* src/components/Navbar/Navbar.css */
+
+/* El contenedor invisible que centra la barra */
+.navbar-container {
+  position: fixed;
+  top: 25px; /* Distancia del techo para que "flote" */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000; /* Se asegura de pisar todo el contenido al scrollear */
+  padding: 0 20px; /* Evita que toque los costados en celulares */
+}
+
+/* La barra estilo "Píldora" con Glassmorphism */
+.navbar {
+  background: rgba(10, 25, 47, 0.85); /* El fondo oscuro del Hero, pero translúcido */
+  backdrop-filter: blur(12px); /* El efecto de vidrio esmerilado */
+  -webkit-backdrop-filter: blur(12px); /* Soporte para Safari */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px; /* Bordes totalmente redondeados */
+  padding: 12px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 700px; /* Para que no sea súper ancha en monitores grandes */
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease;
+}
+
+/* Logo */
+.navbar__logo a {
+  font-family: var(--font-main);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text-main);
+  letter-spacing: 1px;
+}
+
+.navbar__logo a:hover {
+  color: var(--color-accent-fucsia);
+}
+
+/* Links */
+.navbar__links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar__links a {
+  font-family: var(--font-sec);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-sub);
+  position: relative; /* Necesario para la animación de subrayado */
+}
+
+/* Efecto hover en los links (subrayado animado en fucsia) */
+.navbar__links a:hover {
+  color: var(--color-text-main);
+}
+
+.navbar__links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--color-accent-fucsia);
+  transition: width 0.3s ease;
+}
+
+.navbar__links a:hover::after {
+  width: 100%;
+}
+
+/* --- RESPONSIVE BASICO --- */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+  
+  .navbar__links {
+    gap: 15px; /* Junta un poco los links en celus chicos */
+  }
+  
+  .navbar__logo {
+    display: none; /* Opcional: Oculta el logo en celu para dar espacio a los links */
+  }
+  
+  .navbar {
+    justify-content: center; /* Centra los links si ocultaste el logo */
+  }
+}

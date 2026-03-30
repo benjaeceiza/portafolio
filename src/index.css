@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@700&family=Roboto:wght@300;400&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #0A192F; 
+  --color-text-main: #FFFFFF; 
+  --color-text-sub: #8892B0; 
+  --color-accent-fucsia: #E91E63; 
+  --color-accent-violeta: #9C27B0; 
+  --color-accent-glow: #7C4DFF; 
+
+  --font-main: 'Poppins', sans-serif;
+  --font-sec: 'Montserrat', sans-serif;
+  --font-text: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-text);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  overflow-x: hidden; 
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
