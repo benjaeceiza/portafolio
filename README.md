@@ -13,7 +13,6 @@ Este proyecto fue construido utilizando herramientas modernas para garantizar un
 * **Frontend:** React JS, Vite
 * **Estilos:** CSS3 (Custom Properties, Flexbox, CSS Grid, Animaciones)
 * **Iconos:** React Icons
-* **Notificaciones y Alertas:** SweetAlert2
 * **Servicio de Correos:** EmailJS (Integración directa sin backend para el formulario de contacto)
 
 ---
