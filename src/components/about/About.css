@@ -125,9 +125,10 @@
 .skill-card:hover .css { color: #1572B6; }
 .skill-card:hover .js { color: #F7DF1E; }
 .skill-card:hover .react { color: #61DAFB; }
-.skill-card:hover .sass { color: #CC6699; }
+.skill-card:hover .node { color: #339933; } /* Verde de Node */
+.skill-card:hover .java { color: #f89820; } /* Naranja de Java */
+.skill-card:hover .sql { color: #00758F; }  /* Azul base de datos */
 .skill-card:hover .mongo { color: #47A248; }
-.skill-card:hover .firebase { color: #FFCA28; }
 
 .skill-card span {
   font-family: var(--font-sec);
@@ -138,8 +139,8 @@
 
 @media (min-width: 1200px) {
   .about__skills {
-    /* Le decimos: 'Quiero 3 columnas, cada una de 1fr (espacio proporcional)' */
-    grid-template-columns: repeat(3, 1fr) !important;
+    /* Cambiamos a 4 columnas para que las 8 skills formen dos filas perfectas */
+    grid-template-columns: repeat(4, 1fr) !important;
   }
 }
 

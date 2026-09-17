@@ -30,10 +30,10 @@
   box-shadow: 0 10px 30px -15px rgba(156, 39, 176, 0.3);
 }
 
-/* --- NUEVO: Imagen del Proyecto con Overlay y Mac Dots --- */
+/* --- Imagen del Proyecto con Overlay y Mac Dots --- */
 .project-card__image-container {
-  height: 200px;
-  background-color: #112240; /* Fondo de carga si no hay imagen */
+  height: 160px; /* Reducido para ganar espacio */
+  background-color: #112240; 
   overflow: hidden;
   position: relative;
 }
@@ -46,8 +46,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(10, 25, 47, 0.6); /* Oscurece la foto por defecto para que no resalte de más */
-  z-index: 1; /* Arriba de la foto */
+  background-color: rgba(10, 25, 47, 0.6); 
+  z-index: 1; 
   transition: background-color 0.4s ease;
   pointer-events: none; 
 }
@@ -59,9 +59,9 @@
   top: 12px;
   left: 15px;
   font-size: 10px;
-  color: rgba(255, 255, 255, 0.25); /* Gris muy sutil */
+  color: rgba(255, 255, 255, 0.25); 
   letter-spacing: 3px;
-  z-index: 2; /* Arriba del overlay */
+  z-index: 2; 
   pointer-events: none;
 }
 
@@ -69,55 +69,62 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top; /* Asegura que se vea la parte superior del screenshot */
   transition: transform 0.5s ease;
 }
 
 /* 3. Efectos Hover: Zoom y quitar el Overlay oscuro */
 .project-card:hover .project-card__img {
-  transform: scale(1.05); /* Efecto zoom re sutil al pasar el mouse */
+  transform: scale(1.05); 
 }
 
 .project-card:hover .project-card__image-container::before {
-  background-color: transparent; /* Revela los colores 100% reales de tu screenshot */
+  background-color: transparent; 
 }
 
 /* Contenido de la tarjeta */
 .project-card__content {
-  padding: 25px;
+  padding: 20px; /* Reducido para hacerla más compacta */
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Empuja los links hacia abajo si la descripción es corta */
+  flex-grow: 1; 
 }
 
 .project-card__title {
   font-family: var(--font-sec);
-  font-size: 22px;
+  font-size: 18px; /* Achicado */
   color: var(--color-text-main);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  line-height: 1.3;
 }
 
 .project-card__description {
-  font-size: 15px;
+  font-size: 14px; /* Achicado */
   color: var(--color-text-sub);
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
   flex-grow: 1;
+  /* Fuerza a que el texto ocupe un máximo de 3 líneas y pone puntos suspensivos */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* Etiquetas de Tecnologías (Pills) */
 .project-card__tech-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 25px;
+  gap: 8px; /* Espaciado reducido */
+  margin-bottom: 20px; 
 }
 
 .project-card__tech-item {
   font-family: var(--font-sec);
-  font-size: 12px;
+  font-size: 11px; /* Achicado */
   color: var(--color-accent-fucsia);
-  background: rgba(233, 30, 99, 0.1); /* Fucsia muy transparente */
-  padding: 5px 12px;
+  background: rgba(233, 30, 99, 0.1); 
+  padding: 4px 10px; /* Padding más compacto */
   border-radius: 20px;
   font-weight: 500;
 }
@@ -125,9 +132,9 @@
 /* Links (Iconos) */
 .project-card__links {
   display: flex;
-  justify-content: flex-end; /* Los tira a la derecha */
+  justify-content: flex-end; 
   gap: 20px;
-  font-size: 22px;
+  font-size: 20px; /* Levemente achicados */
   color: var(--color-text-main);
 }
 
@@ -137,18 +144,18 @@
 
 /* --- ACORDEÓN DE CREDENCIALES DEMO --- */
 .project-card__accordion-wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Reducido levemente */
 }
 
 .accordion__toggle-btn {
   background: transparent;
-  border: 1px solid rgba(233, 30, 99, 0.4); /* Fucsia sutil */
+  border: 1px solid rgba(233, 30, 99, 0.4); 
   color: var(--color-accent-fucsia);
   width: 100%;
-  padding: 10px;
+  padding: 8px; /* Reducido */
   border-radius: 6px;
   font-family: var(--font-sec);
-  font-size: 13px;
+  font-size: 12px; /* Achicado */
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -162,7 +169,6 @@
   border-color: var(--color-accent-fucsia);
 }
 
-/* El truco del acordeón: max-height 0 y overflow hidden */
 .accordion__content {
   max-height: 0;
   overflow: hidden;
@@ -170,19 +176,17 @@
   opacity: 0;
 }
 
-/* Cuando tiene la clase 'open', le damos altura y lo mostramos */
 .accordion__content.open {
-  max-height: 150px; /* Altura suficiente para el contenido */
+  max-height: 150px; 
   opacity: 1;
   margin-top: 10px;
 }
 
-/* La cajita oscura de adentro */
 .project-card__demo-box {
   background: rgba(0, 0, 0, 0.2); 
   border: 1px dashed rgba(255, 255, 255, 0.15); 
   border-radius: 6px;
-  padding: 15px;
+  padding: 12px; /* Reducido */
 }
 
 .demo-box__list {
@@ -194,7 +198,7 @@
 
 .demo-box__list li {
   font-family: 'Courier New', Courier, monospace; 
-  font-size: 12px;
+  font-size: 11px; /* Achicado */
   color: var(--color-text-main);
   display: flex;
   align-items: center;
@@ -204,7 +208,7 @@
   color: var(--color-accent-fucsia); 
   font-family: var(--font-sec);
   font-weight: 600;
-  min-width: 60px;
+  min-width: 55px;
   display: inline-block;
 }
 

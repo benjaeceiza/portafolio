@@ -97,6 +97,8 @@
   margin-top: 20px;
   font-size: 24px;
   color: var(--color-text-sub);
+  list-style: none; 
+  padding: 0;
 }
 
 .hero__socials a:hover {

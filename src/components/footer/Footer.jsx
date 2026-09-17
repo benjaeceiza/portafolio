@@ -12,9 +12,7 @@ function Footer() {
           <p className="footer__text">
             &copy; {añoActual} Benjamín Eceiza. Todos los derechos reservados.
           </p>
-          <p className="footer__subtext">
-            Diseñado y desarrollado con React ⚛️.
-          </p>
+         
         </div>
 
       </div>

@@ -1,10 +1,7 @@
-
-
-
 import './About.css';
 
-import { FaHtml5, FaCss3Alt, FaReact, FaSass } from 'react-icons/fa';
-import { IoLogoJavascript, IoLogoFirebase } from 'react-icons/io5';
+import { FaHtml5, FaCss3Alt, FaReact, FaJava, FaDatabase, FaNodeJs } from 'react-icons/fa';
+import { IoLogoJavascript } from 'react-icons/io5';
 import { DiMongodb } from 'react-icons/di';
 
 function About() {
@@ -28,25 +25,27 @@ function About() {
                         </div>
                         <div className="about__window-body">
                             <p>
-                                ¡Hola! Soy Benjamín, un desarrollador web radicado en San Luis con <strong>+2 años de experiencia</strong> transformando ideas en productos digitales reales.
+                                ¡Hola! Soy Benjamín, un desarrollador Full Stack radicado en Villa Mercedes, San Luis. Actualmente combino mi formación universitaria en <strong>Programación de Sistemas</strong> con el desarrollo activo de software a medida para clientes reales.
                             </p>
                             <p>
-                                Aunque mi fuerte es crear interfaces dinámicas y obsesionarme con el detalle visual en <strong>React</strong>, me muevo muy cómodo en todo el ecosistema <strong>MERN</strong> (Node.js, Express, MongoDB).
+                                Disfruto el desafío de tomar un proyecto desde cero y llevarlo a producción. Me muevo con fluidez entre la creación de interfaces dinámicas con <strong>React</strong> y la construcción de arquitecturas sólidas en el backend usando <strong>Node.js, Express</strong> o <strong>Java</strong>, integrando bases de datos SQL y NoSQL.
                             </p>
                             <p>
-                                Me encanta agarrar proyectos complejos de principio a fin. Ya sea armando el panel de administración para una app de gestión, o integrando flujos de pago y autenticación segura (JWT) para plataformas de e-learning. Mi objetivo siempre es escribir código limpio que el usuario ni note, pero que disfrute usar.
+                                En el último tiempo he desarrollado desde <strong>plataformas de e-learning</strong> hasta <strong>sistemas de gestión inmobiliaria</strong> y aplicaciones de reservas. Mi enfoque es directo: escribir código limpio, priorizar la escalabilidad y entregar soluciones tecnológicas que realmente sumen valor.
                             </p>
                         </div>
                     </div>
 
-                    {/* COLUMNA DERECHA: Grilla de Skills (Modo Glassmorphism) */}
+                    {/* COLUMNA DERECHA: Grilla de Skills */}
                     <div className="about__skills">
                         <div className="skill-card"><FaHtml5 className="skill-icon html" /> <span>HTML5</span></div>
                         <div className="skill-card"><FaCss3Alt className="skill-icon css" /> <span>CSS3</span></div>
                         <div className="skill-card"><IoLogoJavascript className="skill-icon js" /> <span>JavaScript</span></div>
                         <div className="skill-card"><FaReact className="skill-icon react" /> <span>React JS</span></div>
+                        <div className="skill-card"><FaNodeJs className="skill-icon node" /> <span>Node.js</span></div>
+                        <div className="skill-card"><FaJava className="skill-icon java" /> <span>Java</span></div>
+                        <div className="skill-card"><FaDatabase className="skill-icon sql" /> <span>SQL</span></div>
                         <div className="skill-card"><DiMongodb className="skill-icon mongo" /> <span>MongoDB</span></div>
-                        <div className="skill-card"><IoLogoFirebase className="skill-icon firebase" /> <span>Firebase</span></div>
                     </div>
 
                 </div>
